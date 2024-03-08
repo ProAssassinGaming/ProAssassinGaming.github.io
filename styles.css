@@ -1,0 +1,177 @@
+/* Reset default browser styles */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, ol, li, a, form, label, input, textarea, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FDF0ED; /* Pink */
+    color: #000; /* Black */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #FFD700; /* Gold */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #000; /* Black */
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Slideshow Section */
+
+.slideshow-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Move the slideshow behind other content */
+    background-size: cover;
+    background-position: center;
+    animation: ease-in s infinite;
+}
+
+@keyframes fade {
+    0%, 25% {
+        background-image: url('1.png'); /* First background image */
+    }
+    25.01%, 50% {
+        background-image: url('2.png'); /* Second background image */
+    }
+    50.01%, 75% {
+        background-image: url('3.png'); /* Third background image */
+    }
+    75.01%, 100% {
+        background-image: url('4.png'); /* Fourth background image */
+    }
+}
+
+.fade {
+    opacity: 1;
+}
+/* Home Section */
+.home {
+    padding: 100px 0;
+    text-align: center;
+    position: relative; /* Add position relative to the home section */
+}
+
+.home-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #FFC100; /* Lighter Gold */
+}
+
+/* Shop Section */
+.shop {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.shop-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.shop-description{
+    text-align: center;
+
+}
+.bracelet-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bracelet-image {
+    max-width: 200px; /* Adjust the maximum width of the images */
+    height: auto;
+    margin: 0 20px 20px 0;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.bracelet-image:hover {
+    transform: scale(1.05); /* Increase scale on hover for a slight zoom effect */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #FDF0ED; /* Pink */
+    padding: 80px 0;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.contact-description {
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #000; /* Black */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

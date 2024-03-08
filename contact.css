@@ -1,0 +1,113 @@
+/* Reset default browser styles */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, ol, li, a, form, label, input, textarea, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FDF0ED; /* Pink */
+    color: #000; /* Black */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #FFD700; /* Gold */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav {
+    float: right;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #000; /* Black */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFD700; /* Gold */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FFC100; /* Lighter Gold */
+}
+
+.footer {
+    background-color: #000; /* Black */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: inherit;
+    bottom: 1000px;
+}
